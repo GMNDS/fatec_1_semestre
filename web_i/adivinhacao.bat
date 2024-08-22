@@ -44,3 +44,4 @@ if %palpite% == %numero% (
 pause
 
 @REM echo Você tem restatantes %restantes% tentativas
+
