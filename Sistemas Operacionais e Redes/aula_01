@@ -1,0 +1,27 @@
+ # Redes
+
+### Introdução
+
+### Benefícios
+- Troca de informações
+- Compartilhamento de recursos
+
+### Requisitos
+Inicialmente as primeiras redes de computadores foram projetadas para:
+- trasnferência de arquivos
+- login remoto
+- correio eletrônico
+- newsgrupos (fóruns)
+
+*Possívelmente o protocolo NNTP ou NCP e depois o IP*
+
+-Com a evolução dos sistemas distribuídos, e necessidades a aplicativos distribuídos, compartilhamento de arquivos novos requisitos surgiram
+- **Desempenho:** latência e taxa de transmissão 
+- **Confiabilidade:** Garantir que o dado chegue garantindo que em caso de falhas se recupera
+- **Segurança:** Proteger contra acesso externo , além de controlar o acesso interno.
+- **Confidencialidade:** 
+- **Mobilidade:** Permitir que dispostiivos móveis sejam reconectados em diferentes pontos da rede
+- **Qualidade de serviço:** 
+
+*Possívelmente o TCP/IP pra confiabilidade, UDP pra desempenho*
+
