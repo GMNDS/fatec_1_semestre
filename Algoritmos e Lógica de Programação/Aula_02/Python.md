@@ -20,7 +20,6 @@ Variável é uma dado que é armazenado na memória
 
 `%`: Resto
 
-
 ## Comentários
 Linha única: `#Comentário`
 Multilinha:
@@ -40,7 +39,7 @@ Comentário multilinha
 
 `lists`: Semelhante a um array mas diferente, nao está ao lado na memoria e são armazenadas na heap
 
-`Dictinary`:
+`Dictinary`: Como se fosse uma lista que armazena chave e valor
 
 ## Oque foi visto na aula
 - Variável hello world

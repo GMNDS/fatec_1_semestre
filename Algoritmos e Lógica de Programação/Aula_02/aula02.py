@@ -1,6 +1,9 @@
 import os
-def hello():
+def hello() -> int:
     print("Hello World")
+    return 0
+
+number = hello()
 
 def hello_name():
     name = input("Digite seu nome: ")
