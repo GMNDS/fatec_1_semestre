@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <form action="#">
+      <label for="username">Usuário: </label>
+      <input
+        type="text"
+        id="username"
+        placeholder="Digite o nome do usuário"
+        class="form-login"
+      />
+      <label for="email" id="email">E-mail: </label>
+      <input
+        type="email"
+        placeholder="Digite seu e-mail"
+        class="form-login"
+      />
+      <label for="password">Senha: </label>
+      <input
+        type="password"
+        id="password"
+        placeholder="Digite sua senha"
+        class="form-login"
+      />
+      <label for="repeat_password">Repita sua senha: </label>
+      <input
+        type="password"
+        id="repeat_password"
+        placeholder="Repita sua senha"
+        class="form-login"
+      />
+      <label for="user_role">Tipo de usuário: </label>
+      <select name="user_role" id="user_role" class="form-login">
+        <option value="admin">Administrador</option>
+        <option value="teacher">Professor</option>
+        <option value="student">Estudante</option>
+      </select>
+      <input type="submit" value="Cadastrar" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cadastro</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="logo">Academy</h1>
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#">Cursos</a>
+            <a href="#">Calendário</a>
+            <a href="#">Notícias</a>
+            <a href="#">Eventos</a>
+            <a href="#">Sobre</a>
+            <button class="btnLogin-header">Logar</button>
+        </nav>
+    </header>
+    <main>
+      <section class="section-register">
+        <h2 class="register-title">Register now</h2>
+        <form action="#">
+          <label for="username">Usuário: </label>
+          <input
+            type="text"
+            id="username"
+            placeholder="Digite o nome do usuário"
+            class="form-register"
+          />
+          <label for="email" id="email">E-mail: </label>
+          <input
+            type="email"
+            placeholder="Digite seu e-mail"
+            class="form-register"
+          />
+          <label for="password">Senha: </label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Digite sua senha"
+            class="form-register"
+          />
+          <label for="repeat-password">Repita sua senha: </label>
+          <input
+            type="password"
+            id="repeat-password"
+            placeholder="Repita sua senha"
+            class="form-register"
+          />
+          <label for="user-role">Tipo de usuário: </label>
+          <select name="user-role" id="user-role" class="form-register">
+            <option value="admin">Administrador</option>
+            <option value="teacher">Professor</option>
+            <option value="student">Estudante</option>
+          </select>
+          <input type="submit" value="Cadastrar" />
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
