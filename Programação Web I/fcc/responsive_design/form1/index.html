@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  <title>Register in Blank</title>
+  <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Register blank</h1>
+      <p id="description"> Register in blan for access our services</p>
+    </header>
+    <main>
+      <section class="register-form">
+        <form id="survey-form" action="#">
+          <fieldset>
+            <label id="name-label" for="name">Primeiro nome: <input type="text" name="name" id="name" placeholder="Insira seu primeiro nome" required></label>
+            <label id="last-name-label" for="last-name">Sobrenome: <input type="text" name="last-name" id="last-name" placeholder="Insira seu sobrenome" required></label>
+            <label id="email-label" for="email">E-mail <input type="email" name="email" id="email" placeholder="Insira seu e-mail" required></label>
+            <label id="password-label" for="password">Senha: <input type="password" name="password" id="password" placeholder="Insira sua senha" required></label>
+            <label id="repeat-password-label" for="repeat-password">Repita a senha: <input type="password" name="repeat-password" id="password" placeholder="Insira sua senha novamente" required ></label>
+          </fieldset>
+
+          <fieldset>
+            <label id="number-label" for="number">Celular: <input type="number" name="number" id="number" placeholder="Insira seu celular" min=0 max=99999999999 required></label>
+            <label id="birthday-label" for="birthday"> Data de nascimento: <input type="date" name="birthday" id="birthday"> </label>
+            <label id="dropdown-label" for="dropdown">Tipo de usuário:
+              <select id="dropdown">
+                <option>Estudante</option>
+                <option>Professor</option>
+                <option>Administrador</option>
+              </select>
+            </label>
+
+            <label id="male-label" for="male"><input type="radio" name="gender" id="male" value="male" class="inline" checked> Masculino</label>
+            <label id="female-label" for="female"><input type="radio" name="gender" id="female" value="female" class="inline" checked> Feminino</label>
+          </fieldset>
+          
+          <label id="terms-conditions"><input type="checkbox" name="terms-conditions" id="terms-conditions" class="inline"> Aceitar termos e condições</label>
+          <label id="terms-privacy"><input type="checkbox" name="terms-privacy" id="terms-privacy" class="inline"> Aceitar termos de privacidade</label>
+          <input type="submit" name="submit" id="submit" value="Registrar">
+        </form>
+
+      </section>
+    </main>
+  </body>
+
+</html>

@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* --background-color: #232946; */
+  --background-color: hsl(228, 30%, 13%);
+  --text-color: #b8c1ec;
+  --button-color: #bbcfee;
+  --buton-text: #232946;
+  --headline-color: #fffffe;
+
+  --card-color: #232946;
+  /* --card-color: hsl(228, 30%, 13%); */
+  --card-tex-color: #232946;
+}
+
+body {
+  font-family: "Merriweather Sans", sans-serif;
+  background: var(--background-color);
+  color: var(--text-color);
+}
+
+main {
+  max-width: 75ch;
+  margin: 0 auto;
+  
+}
+
+fieldset {
+  padding: 1rem 0;
+}
+
+.register-form {
+  background-color: var(--card-color);
+  /* color: var(--card-tex-color); */
+  padding: 3rem;
+  border-radius: 40px;
+  /* font-weight: bold; */
+
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  color: var(--headline-color);
+}
+
+input, select {
+  width: 100%;
+  min-height: 2.5em;
+
+}
+
+fieldset {
+  border: none;
+}
+
+.inline {
+  width: unset;
+  vertical-align: middle;
+  margin-right: 0.5em
+}
