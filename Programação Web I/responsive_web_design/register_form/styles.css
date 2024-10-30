@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #242629;
+  /* --background-color: #272833; */
+  --text-color: #d0d8e2;
+  --button-color: #94a1b2;
+  --buton-text: #232946;
+  --headline-color: #fffffe;
+
+  --card-color: #1a1a1f;
+  /* --card-color: #3E4050; */
+}
+
+body {
+  font-family: "Merriweather Sans", sans-serif;
+  background: var(--background-color);
+  color: var(--text-color);
+}
+
+main {
+  max-width: 75ch;
+  margin: 0 auto;
+  
+}
+
+
+input, select, textarea {
+  width: 100%;
+  min-height: 2.5em;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 15px;
+  padding-inline: 1rem;
+  padding-block: 0.8rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+
+}
+
+fieldset {
+  padding: 1rem 0;
+}
+
+.register-form {
+  margin-block: 2rem;
+  background-color: var(--card-color);
+  /* color: var(--card-tex-color); */
+  padding-inline: 3rem;
+  padding-bottom:2rem;
+  padding-top: 1rem;
+  border-radius: 25px;
+  /* font-weight: bold; */
+
+}
+
+label {
+  display: block;
+  margin: 1rem 0;
+  font-size: 1.1em;
+
+}
+
+header {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+h1 {
+  color: var(--headline-color);
+}
+
+fieldset {
+  border: none;
+}
+
+.inline {
+  width: unset;
+  vertical-align: middle;
+  margin-top: unset;
+  margin-right: 0.5em
+}
+
+ 
+
+label[for="male"], label[for="female"], label[for="terms-conditions"], label[for="terms-privacy"] {
+  margin: unset;
+}
