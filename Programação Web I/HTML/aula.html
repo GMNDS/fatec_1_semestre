@@ -1,0 +1,87 @@
+<html>
+<head>
+<title>EXERCICIO DE JAVASCRIPT</title>
+
+<script LANGUAGE="JavaScript"> 
+
+function Login() {
+			
+	var user=document.frm_login.txt_usuario.value;
+	var email=document.frm_login.txt_usuario.value;
+	var pass=document.frm_login.txt_senha.value;
+
+	if ((user=="fatec" || email=="fatec@fatec") && pass=="123a") {
+	   alert("Conta Validada com Sucesso!!!");
+	   window.location="http://www.uol.com.br"; 
+		}
+	else {
+	   alert("Conta Inválida!!!");
+	   document.frm_login.txt_usuario.value="";
+	   document.frm_login.txt_senha.value="";
+	   document.frm_login.txt_usuario.focus();	
+		}
+	}
+
+
+		function Limpar() {
+			document.frm_login.txt_usuario.value="";
+			document.frm_login.txt_senha.value="";
+		    document.frm_login.txt_usuario.focus();	
+		}
+
+      
+       function verifica_cores() {
+         var cores=document.frm_login.cor.value;
+         switch (cores) {
+         	    case 'azul':
+         	          document.bgColor='MidnightBlue';
+					  document.fgColor='white';
+         	          break;
+         	    case 'verde':
+         	          document.bgColor='DarkOliveGreen';
+					  document.fgColor='white';
+         	          break;
+         	    case 'vermelho':
+         	          document.bgColor='DarkRed';
+					  document.fgColor='white';
+         	          break;
+         	    case 'cinza':
+         	          document.bgColor='#4F4F4F';
+					  document.fgColor='cyan';
+         	          break;
+         	    default:
+         	          document.bgColor='SaddleBrown';
+					  document.fgColor='white';
+         	          break;
+         }
+       }
+
+</script>
+</head>
+
+<body> 
+
+<form name="frm_login">
+<p>
+<h2>ÁREA DE SEGURANÇA</h2>
+<fieldset>
+   <legend>IDENTIFICAÇÃO DA CONTA:</legend>
+	   <h3> Usuário ou E-mail:<br>
+	    <input type="text" name="txt_usuario" size="40" maxlength="40" required><p>
+		Senha:<br>
+		<input type="password" name="txt_senha" size="40" maxlength="15" required><p>
+		<input type="button" name="btn_login" value="ENTRAR" onClick="Login()">&nbsp;&nbsp;
+		<input type="button" name="btn_limpar" value="LIMPAR" onClick="Limpar()">
+</fieldset>
+<p>
+<fieldset>
+<legend>ESCOLHA O PLANO DE FUNDO:</legend>
+<input type="radio" name="cor" value="azul" onClick="verifica_cores()">Azul &nbsp;&nbsp;
+<input type="radio" name="cor" value="verde" onClick="verifica_cores()">Verde &nbsp;&nbsp;
+<input type="radio" name="cor" value="vermelho" onClick="verifica_cores()">Vermelho &nbsp;&nbsp;
+<input type="radio" name="cor" value="cinza" onClick="verifica_cores()">Cinza &nbsp;&nbsp;
+<input type="radio" name="cor" value="marrom" onClick="verifica_cores()">Marrom
+</fieldset>
+</form> 
+</body>
+</html>
