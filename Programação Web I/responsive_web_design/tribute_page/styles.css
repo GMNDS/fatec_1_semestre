@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: boder-box;
+}
+
+:root {
+  --bg-color: #242629;
+  --headline-color: #fffffe;
+  --card-color: #16161a;
+  --accent-color: #006a67;
+  --text-color: #94a1b2;
+}
+
+html {
+  font-size: 10px;
+}
+body {
+  font-family: Georgia, serif;
+  font-size: 1.6rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);  
+
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: var(--card-color);
+  padding-block: 2rem;
+}
+
+h1,h2 {
+  color: var(--headline-color);
+}
+
+
+main {
+  padding-block: 2rem;
+  border: 5px
+}
+
+section {
+  padding-block: 2rem;
+}
+
+#section-image {
+  background-color: var(--card-color);
+  /* width: 99vw; */
+  margin: 0 auto;
+}
+
+#section-timeline {
+  width: min(80vh, 75rem);
+  margin: 0 auto;
+}
+
+figure {
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  width: max(25vw,300px);
+  max-width: 100%;
+  height: auto;
+}
+ul {
+  padding-block: 2rem;
+}
+li {
+  padding: 1rem;
+}
+
+footer {
+  background-color: var(--card-color);
+  text-align: center;
+  padding: 20px; 
+  font-weight: 600;
+}
+
+#more{
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+a{
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--headline-color);
+}
