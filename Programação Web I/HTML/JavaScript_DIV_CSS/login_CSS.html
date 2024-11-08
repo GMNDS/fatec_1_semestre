@@ -2,63 +2,57 @@
 <head>
 <title>EXERCICIO DE JAVASCRIPT</title>
 
-<style type="text/css">
- @import url("estilo.css"); 
-</style>
+<link rel="stylesheet" type="text/css" href="estilo.css">
 
 <script LANGUAGE="JavaScript"> 
 
 function Login() {
-			
-	var user=document.frm_login.txt_usuario.value;
-	var email=document.frm_login.txt_usuario.value;
-	var pass=document.frm_login.txt_senha.value;
+    var user = document.frm_login.txt_usuario.value;
+    var email = document.frm_login.txt_usuario.value;
+    var pass = document.frm_login.txt_senha.value;
 
-	if ((user=="fatec" || email=="fatec@fatec") && pass=="123a") {
-	   alert("Conta Validada com Sucesso!!!");
-	   window.location="http://www.uol.com.br"; 
-		}
-	else {
-	   alert("Conta Inválida!!!");
-	   document.frm_login.txt_usuario.value="";
-	   document.frm_login.txt_senha.value="";
-	   document.frm_login.txt_usuario.focus();	
-		}
-	}
+    if ((user == "fatec" || email == "fatec@fatec") && pass == "123a") {
+        alert("Conta Validada com Sucesso!!!");
+        window.location = "http://www.uol.com.br"; 
+    } else {
+        alert("Conta Inválida!!!");
+        document.frm_login.txt_usuario.value = "";
+        document.frm_login.txt_senha.value = "";
+        document.frm_login.txt_usuario.focus();    
+    }
+}
 
+function Limpar() {
+    document.frm_login.txt_usuario.value = "";
+    document.frm_login.txt_senha.value = "";
+    document.frm_login.txt_usuario.focus();    
+}
 
-		function Limpar() {
-			document.frm_login.txt_usuario.value="";
-			document.frm_login.txt_senha.value="";
-		    document.frm_login.txt_usuario.focus();	
-		}
-
-      
-       function verifica_cores() {
-         var cores=document.frm_login.cor.value;
-         switch (cores) {
-         	    case 'azul':
-         	          document.bgColor='MidnightBlue';
-					  document.fgColor='white';
-         	          break;
-         	    case 'verde':
-         	          document.bgColor='DarkOliveGreen';
-					  document.fgColor='white';
-         	          break;
-         	    case 'vermelho':
-         	          document.bgColor='DarkRed';
-					  document.fgColor='white';
-         	          break;
-         	    case 'cinza':
-         	          document.bgColor='#4F4F4F';
-					  document.fgColor='cyan';
-         	          break;
-         	    default:
-         	          document.bgColor='SaddleBrown';
-					  document.fgColor='white';
-         	          break;
-         }
-       }
+function verifica_cores() {
+    var cores = document.frm_login.cor.value;
+    switch (cores) {
+        case 'azul':
+            document.body.style.backgroundColor = 'MidnightBlue';
+            document.body.style.color = 'black';
+            break;
+        case 'verde':
+            document.body.style.backgroundColor = 'DarkOliveGreen';
+            document.body.style.color = 'black';
+            break;
+        case 'vermelho':
+            document.body.style.backgroundColor = 'DarkRed';
+            document.body.style.color = 'black';
+            break;
+        case 'cinza':
+            document.body.style.backgroundColor = '#4F4F4F';
+            document.body.style.color = 'black';
+            break;
+        default:
+            document.body.style.backgroundColor = 'SaddleBrown';
+            document.body.style.color = 'black';
+            break;
+    }
+}
 
 </script>
 </head>
@@ -69,33 +63,31 @@ function Login() {
     <img src="paisagem1.jpg" height="200" width="300">
 </div>
 
-
 <div class="direito_inferior">
-    <img src="paisagem2.jpg" height="200" width="300">
+    <img src="paisagem2.avif" height="200" width="300">
 </div>
 
 <div class="esquerdo_superior">
-    <img src="paisagem3.jpg" height="200" width="300">
+    <img src="paisagem3.avif" height="200" width="300">
 </div>
 
 <div class="esquerdo_inferior">
-    <img src="paisagem4.jpg" height="200" width="300">
+    <img src="paisagem4.webp" height="200" width="300">
 </div>
-
 
 <div class="centro">
 <form name="frm_login">
 <p>
 <center>
-<h2>AREA DE SEGURANÇA</h2>
+<h2>ÁREA DE SEGURANÇA</h2>
 <fieldset>
    <legend>IDENTIFICAÇÃO DA CONTA:</legend>
-	   <h3> Usuário ou E-mail:<br>
-	    <input id="caixa" type="text" name="txt_usuario" size="40" maxlength="40" required><p>
-		Senha:<br>
-		<input id="caixa" type="password" name="txt_senha" size="40" maxlength="15" required><p>
-		<input id="botao" type="button" name="btn_login" value="ENTRAR" onClick="Login()">&nbsp;&nbsp;
-		<input id="botao" type="button" name="btn_limpar" value="LIMPAR" onClick="Limpar()">
+   <h3> Usuário ou E-mail:<br>
+    <input id="caixa" type="text" name="txt_usuario" size="40" maxlength="40" required><p>
+    Senha:<br>
+    <input id="caixa" type="password" name="txt_senha" size="40" maxlength="15" required><p>
+    <input id="botao" type="button" name="btn_login" value="ENTRAR" onClick="Login()">&nbsp;&nbsp;
+    <input id="botao" type="button" name="btn_limpar" value="LIMPAR" onClick="Limpar()">
 </fieldset>
 <p>
 <fieldset>
